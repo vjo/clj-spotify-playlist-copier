@@ -12,8 +12,9 @@ Built on the top of [clj-spotify](https://github.com/blmstrm/clj-spotify).
 * The playlist should be less than 50 songs.
 
 ## Usage
-
+```Clojure
 [clj-spotify-playlist-copier "0.1.0"]
+```
 
 ```Clojure
 (ns my.ns
