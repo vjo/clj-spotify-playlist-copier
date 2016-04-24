@@ -36,4 +36,5 @@
   (let [{:keys [playlist-id-to-copy playlist-owner-id-to-copy]} (get-playlist-to-copy user-id playlist-name-to-copy token)
         tracks (get-playlist-tracks playlist-id-to-copy playlist-owner-id-to-copy token)
         playlist-id-new (create-playlist user-id playlist-name-new public? token)
-        snapshot-id (add-tracks-to-playlist user-id playlist-id-new tracks token)]))
+        snapshot-id (add-tracks-to-playlist user-id playlist-id-new tracks token)]
+    {:new-playlist-id playlist-id-new}))
